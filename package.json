@@ -1,0 +1,19 @@
+{
+  "name": "meadowlark",
+  "version": "1.0.0",
+  "description": "",
+  "main": "meadowlark.js",
+  "scripts": {
+    "test": "node meadowlark.js"
+  },
+  "keywords": [
+    "express",
+    "meadowlark",
+    "expressjs"
+  ],
+  "author": "Reign Westry",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
