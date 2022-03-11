@@ -7,15 +7,18 @@
 //? 1) import code
 const handlers = require('../handlers')
 
-//? 2) Describe what's being tested ==> 'home page renders'
+
+
+//? 2) CREATE handlers === Describe what's being tested ==> 'home page renders'
+//# HOME HANDLER
 test('home page renders', () => {
     const req = {}
     const res = { render: jest.fn() }
     handlers.home(req, res)
-    expect(res.render.mock.calls[0][0].toBe('home'))
+    expect(res.render.mock.calls[0][0]).toBe('home')
 })
 
-
+//# ABOUT HANDLER
 test('about page renders with fortune', () => {
 const req = {}
 const res = { render: jest.fn() }
@@ -27,6 +30,7 @@ const res = { render: jest.fn() }
     }))
 })
 
+//# 404 HANDLER
 test('404 handler renders', () => {
 const req = {}
 const res = { render: jest.fn() }
@@ -35,6 +39,7 @@ const res = { render: jest.fn() }
     expect(res.render.mock.calls[0][0]).toBe('404')
 })
 
+//# 500 HANDLER
 test('500 handler renders', () => {
 const err = new Error('some error')
 const req = {}

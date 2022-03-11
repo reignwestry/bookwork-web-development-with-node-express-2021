@@ -11,9 +11,10 @@
   },
   "scripts": {
     "test": "jest",
+    "jestwatch": "jest -- --watch",
     "lint": "eslint meadowlark.js lib"
   },
-  "author": "",
+  "author": "Reign Westry",
   "license": "ISC",
   "description": "",
   "devDependencies": {
