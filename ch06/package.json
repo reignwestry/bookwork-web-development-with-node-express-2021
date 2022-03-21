@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "express": "^4.17.3",
+    "express-handlebars": "^6.0.3"
+  },
+  "name": "meadowlark",
+  "version": "1.0.0",
+  "main": "meadowlark.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest",
+    "jestwatch": "jest -- --watch",
+    "lint": "eslint meadowlark.js lib"
+  },
+  "author": "Reign Westry",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "eslint": "^8.10.0",
+    "jest": "^27.5.1",
+    "portfinder": "^1.0.28",
+    "puppeteer": "^13.4.1"
+  }
+}
